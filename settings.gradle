@@ -1,0 +1,2 @@
+rootProject.name='StartActivityService'
+include ':app'
