@@ -1,6 +1,6 @@
 # RxStartActivityForResult
 
-Use this service to convert a `startActivityForResult` into a ReactiveX Single.
+Android service to convert a `.startActivityForResult(intent, requestCode)` into a ReactiveX Single.
 
 ## Example
 
@@ -30,3 +30,7 @@ startActivityService
         }
     )
 ```
+
+## Requirements
+
+- AndroidX

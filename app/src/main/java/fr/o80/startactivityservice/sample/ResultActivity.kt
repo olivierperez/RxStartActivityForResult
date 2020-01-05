@@ -1,4 +1,4 @@
-package fr.o80.startactivityservice
+package fr.o80.startactivityservice.sample
 
 import android.app.Activity
 import android.content.Intent

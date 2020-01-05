@@ -1,4 +1,4 @@
-package fr.o80.startactivityservice.lib
+package fr.o80.startactivityservice
 
 import android.content.Intent
 import android.os.Bundle
@@ -8,7 +8,7 @@ import io.reactivex.subjects.PublishSubject
 
 class StartActivityFragment : Fragment() {
 
-    private val result : MutableMap<Int, PublishSubject<Result>> = mutableMapOf()
+    private val result: MutableMap<Int, PublishSubject<Result>> = mutableMapOf()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,11 +23,13 @@ class StartActivityFragment : Fragment() {
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        result[requestCode]?.onNext(Result(
-            requestCode,
-            resultCode,
-            data
-        ))
+        result[requestCode]?.onNext(
+            Result(
+                requestCode,
+                resultCode,
+                data
+            )
+        )
         result.remove(requestCode)
     }
 }

@@ -1,11 +1,11 @@
-package fr.o80.startactivityservice
+package fr.o80.startactivityservice.sample
 
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import fr.o80.startactivityservice.lib.StartActivityService
+import fr.o80.startactivityservice.StartActivityService
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.rxkotlin.subscribeBy
 import kotlinx.android.synthetic.main.activity_main.*

@@ -1,4 +1,4 @@
-package fr.o80.startactivityservice.lib
+package fr.o80.startactivityservice
 
 import android.content.Intent
 import androidx.fragment.app.Fragment
