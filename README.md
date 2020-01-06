@@ -31,6 +31,20 @@ startActivityService
     )
 ```
 
+## Install
+
+[![](https://jitpack.io/v/olivierperez/RxStartActivityForResult.svg)](https://jitpack.io/#olivierperez/RxStartActivityForResult)
+
+```groovy
+repositories {
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    implementation 'com.github.olivierperez:RxStartActivityForResult:VERSION'
+}
+```
+
 ## Requirements
 
 - AndroidX
